@@ -20,11 +20,21 @@ export default function Login() {
     }
 
     return (
-        <div className="Loginform">
-        <h1>Login</h1>   
+        <div className="styledform">
+        <form>
+        <h1>Login</h1>  
+
+        <div className ="form-group"> 
         <input className="input" type="text" placeholder='username' onChange={e =>setUsername( e.target.value)} />
-        <input className="input" type="password" placeholder='password' onChange={e => setPassword( e.target.value)} />
-        <button onClick={login}>Login</button>
         </div>
+
+        <div className="form-group">
+        <input className="input" type="password" placeholder='password' onChange={e => setPassword( e.target.value)} />
+        </div>
+
+        <button onClick={login}>Login</button>
+        </form>
+        </div>
+        
     )
 }

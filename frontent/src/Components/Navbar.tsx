@@ -24,13 +24,13 @@ export default function Navbar() {
             { ctx ?
             (
             <>
-            <Link onClick ={logout} to='/logout'>Logout</Link>
-            { ctx.isAdmin ?( <Link to="/adim">Admin</Link>) : null}
+            <Link onClick ={logout} to='/logout' className ="navButton">Logout</Link>
+            { ctx.isAdmin ?( <Link to="/adim" className ="navButton">Admin</Link>) : null}
             </>
             ):(
             <>
-            <Link to='/login'>Login</Link>
-            <Link to='/register'>Register</Link>
+            <Link to='/login' className ="navButton">Login</Link>
+            <Link to='/register' className ="navButton">Register</Link>
             </>
             )}
             
@@ -38,7 +38,7 @@ export default function Navbar() {
             
             
             
-            <Link to ='/'>Home</Link>
+            <Link to ='/' className ="navButton">Home</Link>
            
         </div>
     )

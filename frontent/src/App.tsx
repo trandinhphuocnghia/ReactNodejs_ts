@@ -19,14 +19,14 @@ function App() {
        <Route path="/" exact component={HomePage}></Route>
         {
           ctx ? (
-            <>
+            <div className="app">
             {ctx.isAdmin ? <Route path='/admin' exact component ={AdminPage}></Route> : null}
-            </>
+            </div>
           ) : (
-        <>
+        <div className="app">
        <Route path="/login" exact component={Login}></Route>
        <Route path="/register" exact component={Register}></Route>
-       </>
+       </div>
         ) 
       }
      </Switch>
