@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+import { Link ,Redirect,Route} from 'react-router-dom';
 import axios, { AxiosResponse } from 'axios';
+import HomePage from './HomePage';
 export default function Login() {
     const [username,setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -12,7 +14,7 @@ export default function Login() {
           withCredentials: true
       }).then((res : AxiosResponse ) => {
         if (res.data === "Login success") {
-            window.location.href = "/"
+            return <Redirect to = "/"></Redirect>
         }
       }, () => {
           console.log("Failure")

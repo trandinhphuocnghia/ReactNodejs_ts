@@ -24,7 +24,7 @@ export default function Register() {
                 console.log("Failure")
             })  
         }
-        console.log("Please type your pass again!")
+        else console.log("Please type your pass again!")
     }
 
     return (

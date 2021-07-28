@@ -8,13 +8,18 @@ import AdminPage from './Pages/AdminPage';
 import 'C:\\Users\\Mysterious\\ReactNodejs_ts\\frontent\\src\\main.css'
 import { myContext } from './Pages/Context';
 import Register from './Pages/Register';
+import Footer from './Components/Footer';
+
+
+
 function App() {
   const ctx = useContext(myContext)
   return (
-    
-  
+    <div className ="Wrapper">
+   
    <BrowserRouter>
-     <Navbar />
+    <div className = "Header" ><Navbar /></div>
+    <div className = "Context">  
      <Switch>
        <Route path="/" exact component={HomePage}></Route>
         {
@@ -30,7 +35,14 @@ function App() {
         ) 
       }
      </Switch>
+     </div>
+     <div className ="Footer"><Footer/></div>
    </BrowserRouter>
+    
+   </div>
+    
+    
+  
    
   );
 }

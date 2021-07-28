@@ -3,23 +3,48 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
+    
 }
 
 :root{
-    --h1color :rgb(12, 11, 11);;
+    --h1color :rgb(12, 11, 11);
+
 }
 
 .app {
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    margin: 40px 0px;
 }
 
 body{
-    background-color: #2f4960;
-    background-image: linear-gradient(to bottom right,#2f4960 10%, #102040);
+   /* background-color: #2f4960;
+    background-image: linear-gradient(to bottom right,#2f4960 10%, #102040); */
+    background-color: #659DBD;
+    display: flexbox;
+    
+
+
+}
+
+.Wrapper{
+    width: 100%;
+    height: 693px;
+    
+}
+.Context{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 613px;
+  
+}
+
+.container{
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -30,12 +55,54 @@ h1 {
 .NavContainer{
    
     width: 100vw;
-    height: 100px;
-    background: rgb(133, 131, 131);
+    height: 80px;
+    background: rgb(252, 245, 245);
     color: rgb(12, 11, 11);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.Logo{
+
+    width : 10%;
+    float: left;
+    height: 80px;
+}
+
+.Logo:hover{
+    animation: swim 0.8s infinite;
+}
+
+.Searchbar{
+    display: flex;
+    width: 45%;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+}
+.Link{
+    display: flex;
+    width : 45%;
+    float : right;
+    justify-content: flex-end;
+}
+
+.footer{
+    width: 100vw;
+    height : 60px;
+    display : inline-flex;
+    bottom: 0;
+
+}
+
+.Homestyle{
+    width: 100%;
+    color : wheat;
+   align-items: center;
+  justify-content: center;
+   text-align: center;
+  
 }
 
 .styledform {
@@ -47,6 +114,7 @@ h1 {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     align-items: center;
+    margin-top: 30px;
 }
 
 .form-group {
@@ -83,7 +151,40 @@ button {
     display: flex;
     padding: 15px;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    color :#8d8741;
+    background-color: rgb(252, 245, 245);
     font-size: 20px;
+
+}
+
+.navButton :hover{
+    background-color: #222;
+}
+
+/*styled the flex box*/
+.box{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.flexbox{
+    width: 300px;
+    margin: 20px;
+    border : 1.5px solid #8d8741;
+    background-color:rgb(252, 245, 245);
+    border-radius: 5px;
+}
+
+.flexbox1{
+height: 400px;
+}
+
+.flexbox2{
+height: 400px;
+}
+
+.flexbox3{
+height: 400px;
 }
